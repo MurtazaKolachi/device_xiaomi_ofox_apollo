@@ -27,11 +27,7 @@ PRODUCT_PACKAGES += \
     bootctrl.xiaomi_sm8250.recovery
 
 # SHIPPING API
-ifeq ($(TW_USE_FBEV2), true)
 PRODUCT_SHIPPING_API_LEVEL := 30
-else
-PRODUCT_SHIPPING_API_LEVEL := 29
-endif
 
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 31
@@ -47,8 +43,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(DEVICE_PATH)/security/magisk \
     $(DEVICE_PATH)/security/miui_releasekey
 
-# PRODUCT_RELEASE_NAME ro.twrp.device.name
-PRODUCT_PROPERTY_OVERRIDES += ro.twrp.device.name=$(PRODUCT_RELEASE_NAME)
+PRODUCT_PROPERTY_OVERRIDES += ro.twrp.device.name=apollo
 
 ifneq ($(TW_SKKK_VER_CODE),)
 PRODUCT_PROPERTY_OVERRIDES += ro.twrp.version.skkk.code=$(TW_SKKK_VER_CODE)

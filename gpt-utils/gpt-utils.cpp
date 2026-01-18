@@ -171,7 +171,6 @@ static int blk_rw(int fd, int rw, int64_t offset, uint8_t *buf, unsigned len)
             r = 0;
         }
     }
-
     return r;
 }
 
