@@ -43,8 +43,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(DEVICE_PATH)/security/magisk \
     $(DEVICE_PATH)/security/miui_releasekey
 
-# PRODUCT_RELEASE_NAME ro.twrp.device.name
-PRODUCT_PROPERTY_OVERRIDES += ro.twrp.device.name=$(PRODUCT_RELEASE_NAME)
+PRODUCT_PROPERTY_OVERRIDES += ro.twrp.device.name=apollo
 
 ifneq ($(TW_SKKK_VER_CODE),)
 PRODUCT_PROPERTY_OVERRIDES += ro.twrp.version.skkk.code=$(TW_SKKK_VER_CODE)
