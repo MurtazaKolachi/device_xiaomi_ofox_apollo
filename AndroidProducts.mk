@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_apollo.mk
+    $(LOCAL_DIR)/pb_apollo.mk

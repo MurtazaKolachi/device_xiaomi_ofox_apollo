@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The TwrpBuilder Open-Source Project
+# Copyright (C) 2021 The TWRP Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := apollo
-PRODUCT_NAME := twrp_apollo
+PRODUCT_NAME := pb_apollo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10T
 PRODUCT_MANUFACTURER := Xiaomi
-TW_FRAMERATE := 144

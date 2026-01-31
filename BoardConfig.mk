@@ -42,6 +42,9 @@ TARGET_BOOTLOADER_BOARD_NAME := apollo
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Platform
 TARGET_BOARD_PLATFORM := xiaomi_sm8250
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
@@ -177,3 +180,6 @@ TW_USE_DMCTL := true
 
 # Enable early preparation of /data/media for emulated storage
 TW_PREPARE_DATA_MEDIA_EARLY := true
+
+TW_Y_OFFSET := 91
+TW_H_OFFSET := -91

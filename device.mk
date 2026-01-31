@@ -20,11 +20,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Configure core_64_bit_only.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
-# Configure twrp
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Configure pbrp
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_PACKAGES += \
     bootctrl.xiaomi_sm8250.recovery
+
+# Display
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 30
