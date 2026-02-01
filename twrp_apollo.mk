@@ -19,6 +19,9 @@ DEVICE_PATH := device/xiaomi/apollo
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_apollo.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := apollo
 PRODUCT_NAME := twrp_apollo
