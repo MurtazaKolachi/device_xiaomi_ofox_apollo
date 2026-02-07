@@ -173,3 +173,6 @@ TW_NO_SCREEN_BLANK := true
 TW_HAS_EDL_MODE := false
 TW_SUPPORT_INPUT_AIDL_HAPTICS :=true
 TW_BACKUP_EXCLUSIONS := /data/fonts,/data/adb/ap,/data/adb/ksu
+
+# use 'dmsetup' to try and work around problems with formatting the /data partition
+TW_USE_DMCTL := true
