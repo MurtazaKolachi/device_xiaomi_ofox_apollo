@@ -176,3 +176,6 @@ TW_BACKUP_EXCLUSIONS := /data/fonts,/data/adb/ap,/data/adb/ksu
 
 # use 'dmsetup' to try and work around problems with formatting the /data partition
 TW_USE_DMCTL := true
+
+# Enable early preparation of /data/media for emulated storage
+TW_PREPARE_DATA_MEDIA_EARLY := true
