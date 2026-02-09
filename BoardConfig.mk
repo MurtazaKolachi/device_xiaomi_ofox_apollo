@@ -150,9 +150,7 @@ TW_INCLUDE_LPTOOLS := true
 			     
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
-ifeq ($(TW_DEVICE_VERSION),)
-TW_DEVICE_VERSION=16
-endif
+TW_DEVICE_VERSION := By Murtaza Kolachi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
