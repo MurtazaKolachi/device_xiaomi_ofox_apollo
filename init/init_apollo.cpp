@@ -91,6 +91,6 @@ void vendor_load_properties() {
         model_property_override("apollo", "Redmi K30S Ultra");
     } else {
         // Mi 10T / Mi 10T Pro
-        model_property_override("apollo", "Mi 10T");
+        model_property_override("apollo", "Mi 10T / Mi 10T Pro");
     }
 }
