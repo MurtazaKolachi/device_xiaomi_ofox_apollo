@@ -112,8 +112,12 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Workaround for error copying vendor files to recovery ramdisk
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 TARGET_COPY_OUT_VENDOR := vendor
+
+# ODM image filesystem type
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := erofs
+TARGET_COPY_OUT_ODM := odm
 
 #Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
